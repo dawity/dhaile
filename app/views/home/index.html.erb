@@ -1,73 +1,11 @@
 
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="keywords" content="Ruby, Ruby on Rails JavaScript">
-    <meta name="description" content="The personal website and blog of Dawit Haile">
-    <meta name="author" content="Dawit Haile">
-    
-
-    <title>Dawit Haile</title>
-    
-</head>
-
-  <body>
 
     <!-- begin:navbar -->
-    <nav class="navbar navbar-inverse navbar-transparent navbar-fixed-top" role="navigation">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-top">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="index.html"><i class=""></i> <span>Dawit Haile</span></a>
-        </div>
-
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse" id="navbar-top">
-          <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="page.html">Page</a></li>
-            <li class="dropdown">
-              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Pages <b class="caret"></b></a>
-              <ul class="dropdown-menu">
-                <li><a href="blog.html">Blog</a></li>
-                <li><a href="single.html">Single</a></li>
-                <li><a href="archive.html">Archives</a></li>
-                <li><a href="category.html">Category</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="portfolio-single.html">Portfolio Single</a></li>
-              </ul>
-            </li>
-          </ul>
-        </div><!-- /.navbar-collapse -->
-      </div><!-- /.container-fluid -->
-    </nav>
+    <%= render 'navForHome' %>
     <!-- end:navbar -->
 
     <!-- begin:header -->
-    <section id="header" style="background: url(img/img03.jpg) center center;">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-8 col-md-offset-2">
-                    <blockquote>
-                        <p>"Real knowledge is to know the extent of one's ignorance"</p>
-                        <small>Confucius</small>
-                    </blockquote>
-                </div>
-            </div>
-        </div>
-        <div class="overlay"></div>
-    </section>
+    <%= render 'header' %>
     <!-- end:header -->
 
     <!-- begin:featured -->
@@ -414,73 +352,4 @@
     </section>
     <!-- end:partner -->
 
-    <!-- begin:footer -->
-    <section id="footer">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-3">
-                    <div class="widget">
-                        <h3>Recent Post</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Lorem ipsum</a></li>
-                            <li><a href="#">Lorem</a></li>
-                            <li><a href="#">Lorem ipsum dolor</a></li>
-                            <li><a href="#">Lorem sit</a></li>
-                            <li><a href="#">Lorem dolor sit</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-3 col-sm-3">
-                    <div class="widget">
-                        <h3>Useful Links</h3>
-                        <ul class="list-unstyled">
-                            <li><a href="#">Lorem sit</a></li>
-                            <li><a href="#">Lorem dolor sit</a></li>
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
-                            <li><a href="#">Contact</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-md-6 col-sm-5">
-                    <div class="footer-logo">
-                        <h2>Dawit</h2>
-                        <p>Hermosa Beach, Ca<br>(213) 446-9297</p>
-                        <br>
-                        <p class="muted">© 2014 DawitHaile.</p>
-                        
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <!-- end:footer -->
-
-    <!-- begin:copyright -->
-    <section id="copyright">
-      <div class="container">
-        <div class="row">
-          <div class="col-md-6 col-sm-6 copy-left">
-            <p>Copyright &copy; 2014 <strong>QbitLabs</strong>. All Right Reserved.</p>
-          </div>
-
-          <div class="col-md-6 col-sm-6 copy-right">
-            <ul class="list-inline social-icon">
-              <li><a href="#" class="icon-twitter" rel="tooltip" title="" data-placement="top" data-original-title="Twitter"><i class="fa fa-twitter"></i></a></li>
-              <li><a href="#" class="icon-facebook" rel="tooltip" title="" data-placement="top" data-original-title="Facebook"><i class="fa fa-facebook-square"></i></a></li>
-              <li><a href="#" class="icon-youtube" rel="tooltip" title="" data-placement="top" data-original-title="Youtube"><i class="fa fa-youtube"></i></a></li>
-              <li><a href="#" class="icon-instagram" rel="tooltip" title="" data-placement="top" data-original-title="Instagram"><i class="fa fa-instagram"></i></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-    <!-- end:copyrigt -->
-
-   
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    
-  </body>
-</html>
+    <%= render 'footerAndCopyRight' %>
